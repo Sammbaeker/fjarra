@@ -1,0 +1,16 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /fjarra_contact_submissions/{document} {
+      allow create: if request.resource.data.keys().hasAll(['name', 'email', 'message', 'role', 'timestamp'])
+                    && request.resource.data.name is string
+                    && request.resource.data.email is string
+                    && request.resource.data.message is string
+                    && request.resource.data.role is string;
+      allow read, update, delete: if false;
+    }
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

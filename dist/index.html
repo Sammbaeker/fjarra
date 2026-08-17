@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="sv" data-lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fjärra — Din stuga. Alltid bevakad.</title>
+  <meta name="description" content="Fjärra är Sveriges första on-demand plattform för fritidshustillsyn. Verifierade lokala väktare. Tidsstämplade foton. Fred och ro — inom timmar.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Fjärra — Din stuga. Alltid bevakad.">
+  <meta property="og:description" content="On-demand visual checks for Swedish summer houses. Verified locals. Peace of mind within hours.">
+  <meta property="og:image" content="https://fjarra.se/assets/og-image.png">
+  <meta property="og:url" content="https://fjarra.se">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:locale:alternate" content="en_GB">
+
+  <!-- Twitter/X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fjärra">
+  <meta name="twitter:description" content="On-demand cottage checks. Peace of mind for Swedish summer house owners.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://fjarra.se">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png?v=4">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png?v=4">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png?v=4">
+  <link rel="shortcut icon" href="./favicon.ico?v=4">
+  <link rel="manifest" href="./site.webmanifest?v=4">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=DM+Sans:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=DM+Sans:wght@400;500&display=swap">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- ============================================ -->
+  <!-- NAV                                          -->
+  <!-- ============================================ -->
+  <nav class="nav" id="main-nav" aria-label="Main navigation">
+    <div class="container">
+      <a href="/" class="nav__logo" aria-label="Fjärra — Home">
+        <img src="./assets/logo/fjarra-logo-reverse.png" alt="Fjärra" class="nav__logo-reverse" width="140" height="46">
+        <img src="./assets/logo/fjarra-logo-default.png" alt="Fjärra" class="nav__logo-default" width="140" height="46">
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="#problem" class="nav__link"><span data-sv>Problemet</span><span data-en>Problem</span></a></li>
+        <li><a href="#solution" class="nav__link"><span data-sv>Lösningen</span><span data-en>Solution</span></a></li>
+        <li><a href="#ask" class="nav__link"><span data-sv>Investering</span><span data-en>The Ask</span></a></li>
+        <li><a href="#founder" class="nav__link"><span data-sv>Grundaren</span><span data-en>Founder</span></a></li>
+      </ul>
+      <div class="nav__right">
+        <button class="nav__lang" type="button" aria-label="Switch language">EN</button>
+        <a href="#contact" class="btn btn--primary nav__cta"><span data-sv>Kontakta oss</span><span data-en>Contact us</span></a>
+        <button class="nav__hamburger" type="button" aria-label="Open menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile-menu" id="mobile-menu" aria-hidden="true">
+    <button class="nav__mobile-close" type="button" aria-label="Close menu">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <a href="#problem" class="nav__link"><span data-sv>Problemet</span><span data-en>Problem</span></a>
+    <a href="#solution" class="nav__link"><span data-sv>Lösningen</span><span data-en>Solution</span></a>
+    <a href="#ask" class="nav__link"><span data-sv>Investering</span><span data-en>The Ask</span></a>
+    <a href="#founder" class="nav__link"><span data-sv>Grundaren</span><span data-en>Founder</span></a>
+    <a href="#contact" class="btn btn--primary" style="margin-top: 1rem;"><span data-sv>Kontakta oss</span><span data-en>Contact us</span></a>
+    <button class="nav__lang" type="button" aria-label="Switch language" style="margin-top: 1rem;">EN</button>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- HERO                                         -->
+  <!-- ============================================ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+
+    <!-- House silhouette SVG -->
+    <svg class="hero__house" aria-hidden="true" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+      <!-- Roofline -->
+      <polyline points="30,180 200,40 370,180" fill="none" stroke="#FAFAF8" stroke-width="1.5" opacity="0.25"/>
+      <!-- Walls -->
+      <rect x="60" y="180" width="280" height="120" fill="none" stroke="#FAFAF8" stroke-width="1" opacity="0.15"/>
+      <!-- Chimney -->
+      <rect x="280" y="80" width="24" height="100" fill="none" stroke="#FAFAF8" stroke-width="1" opacity="0.15"/>
+      <!-- Window 1 (amber glow) -->
+      <rect class="house-window" x="120" y="210" width="50" height="45" rx="2" fill="#C8852A" opacity="0.6"/>
+      <line x1="145" y1="210" x2="145" y2="255" stroke="#1C3528" stroke-width="1.5"/>
+      <line x1="120" y1="232" x2="170" y2="232" stroke="#1C3528" stroke-width="1.5"/>
+      <!-- Window 2 (amber glow, delayed) -->
+      <rect class="house-window house-window--delayed" x="230" y="210" width="50" height="45" rx="2" fill="#C8852A" opacity="0.6"/>
+      <line x1="255" y1="210" x2="255" y2="255" stroke="#1C3528" stroke-width="1.5"/>
+      <line x1="230" y1="232" x2="280" y2="232" stroke="#1C3528" stroke-width="1.5"/>
+    </svg>
+
+    <div class="container">
+      <div class="hero__content">
+        <p class="hero__eyebrow">
+          <span data-sv>Lansering 2026 · Malmö, Sverige</span>
+          <span data-en>Launching 2026 · Malmö, Sweden</span>
+        </p>
+        <h1 class="hero__headline text-hero">Fjärra.</h1>
+        <p class="hero__subheadline text-h3">
+          <span data-sv>Din stuga. Alltid bevakad.</span>
+          <span data-en>Your cottage. Always watched over.</span>
+        </p>
+        <p class="hero__body text-body">
+          <span data-sv>On-demand visuella kontroller för svenska fritidshus. Verifierade lokala väktare. Tidsstämplade foton. Fred och ro — inom timmar.</span>
+          <span data-en>On-demand visual checks for Swedish summer houses. Verified locals. Timestamped photos. Peace of mind — within hours.</span>
+        </p>
+        <div class="hero__ctas">
+          <a href="#solution" class="btn btn--primary">
+            <span data-sv>Se hur det fungerar →</span>
+            <span data-en>See how it works →</span>
+          </a>
+          <a href="#contact" class="btn btn--outline">
+            <span data-sv>Kontakta oss</span>
+            <span data-en>Contact us</span>
+          </a>
+        </div>
+
+        <div class="hero__trust">
+          <div class="trust-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>BankID Verified</span>
+          </div>
+          <div class="trust-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            <span>Swish Payments</span>
+          </div>
+          <div class="trust-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            <span>GDPR Compliant</span>
+          </div>
+          <div class="trust-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Malmö-based</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- PROBLEM                                      -->
+  <!-- ============================================ -->
+  <section class="section section--birch" id="problem">
+    <div class="container">
+      <p class="section-label reveal">
+        <span data-sv>PROBLEMET</span><span data-en>THE PROBLEM</span>
+      </p>
+      <div class="problem__grid">
+        <div class="problem__stat reveal">
+          <div class="problem__stat-value">600 000</div>
+          <p class="problem__stat-label">
+            <span data-sv>fritidshus i Sverige.<br>De flesta ägare bor 200+ km bort.</span>
+            <span data-en>summer houses in Sweden.<br>Most owners live 200+ km away.</span>
+          </p>
+        </div>
+        <div class="problem__cards">
+          <div class="card reveal">
+            <h3 class="card__title text-h3">
+              <span data-sv>Avstånd</span><span data-en>Distance</span>
+            </h3>
+            <p class="text-body">
+              <span data-sv>Att köra 4 timmar för att se om taket är ok är varken rimligt eller hållbart.</span>
+              <span data-en>Driving 4 hours to check if the roof is fine is neither reasonable nor sustainable.</span>
+            </p>
+          </div>
+          <div class="card reveal">
+            <h3 class="card__title text-h3">
+              <span data-sv>Klimat</span><span data-en>Climate</span>
+            </h3>
+            <p class="text-body">
+              <span data-sv>Hårda vintrar. Frusen rördragning. Snölast. Skador som kostar hundratusentals kronor — och som ingen såg i tid.</span>
+              <span data-en>Harsh winters. Frozen pipes. Snow load. Damage costing hundreds of thousands of kronor — that nobody saw in time.</span>
+            </p>
+          </div>
+          <div class="card reveal">
+            <h3 class="card__title text-h3">
+              <span data-sv>Social skuld</span><span data-en>Social debt</span>
+            </h3>
+            <p class="text-body">
+              <span data-sv>Svensk kultur gör det svårt att be grannen om hjälp om och om igen. Det är inte så vi fungerar.</span>
+              <span data-en>Swedish culture makes it hard to keep asking the neighbour for help. That's not how we work.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SOLUTION                                     -->
+  <!-- ============================================ -->
+  <section class="section section--dark" id="solution">
+    <div class="container">
+      <p class="section-label reveal" style="color: var(--fjarra-amber);">
+        <span data-sv>LÖSNINGEN</span><span data-en>THE SOLUTION</span>
+      </p>
+      <h2 class="text-h2 reveal" style="margin-bottom: 3rem; max-width: 680px;">
+        <span data-sv>Fjärra kopplar ihop dig med en lokal Väktare — någon som faktiskt är där.</span>
+        <span data-en>Fjärra connects you with a local Watcher — someone who is actually there.</span>
+      </h2>
+
+      <div class="solution__steps">
+        <div class="step reveal">
+          <div class="step__number">1</div>
+          <h3 class="step__title text-h3">
+            <span data-sv>Du bokar</span><span data-en>You book</span>
+          </h3>
+          <p class="step__desc text-body">
+            <span data-sv>Lägg ut ett uppdrag i appen. Välj typ av kontroll och sätt ett pris.</span>
+            <span data-en>Post a task in the app. Choose the type of check and set a price.</span>
+          </p>
+        </div>
+        <div class="step reveal">
+          <div class="step__number">2</div>
+          <h3 class="step__title text-h3">
+            <span data-sv>En Väktare accepterar</span><span data-en>A Watcher accepts</span>
+          </h3>
+          <p class="step__desc text-body">
+            <span data-sv>En verifierad lokal i närheten tar sig an uppdraget och åker till stugan.</span>
+            <span data-en>A verified local nearby takes on the task and drives to the cottage.</span>
+          </p>
+        </div>
+        <div class="step reveal">
+          <div class="step__number">3</div>
+          <h3 class="step__title text-h3">
+            <span data-sv>Kontroll utförs</span><span data-en>Check performed</span>
+          </h3>
+          <p class="step__desc text-body">
+            <span data-sv>Väktaren följer checklistan i appen och laddar upp tidsstämplade foton med GPS-verifiering.</span>
+            <span data-en>The Watcher follows the in-app checklist and uploads timestamped photos with GPS verification.</span>
+          </p>
+        </div>
+        <div class="step reveal">
+          <div class="step__number">4</div>
+          <h3 class="step__title text-h3">
+            <span data-sv>Du ser. Du betalar.</span><span data-en>You see. You pay.</span>
+          </h3>
+          <p class="step__desc text-body">
+            <span data-sv>Rapport direkt i din app. Godkänn och betala via Swish — direkt.</span>
+            <span data-en>Report straight to your app. Approve and pay via Swish — instantly.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="solution__values">
+        <div class="values__column reveal">
+          <h3 class="text-h3">
+            <span data-sv>För ägare</span><span data-en>For owners</span>
+          </h3>
+          <ul>
+            <li><span data-sv>Fred och ro utan att köra.</span><span data-en>Peace of mind without driving.</span></li>
+            <li><span data-sv>Direkt rapport.</span><span data-en>Instant report.</span></li>
+            <li><span data-sv>Billigare försäkring.</span><span data-en>Cheaper insurance.</span></li>
+          </ul>
+        </div>
+        <div class="values__column reveal">
+          <h3 class="text-h3">
+            <span data-sv>För väktare</span><span data-en>For watchers</span>
+          </h3>
+          <ul>
+            <li><span data-sv>Tjäna pengar på fritiden. Flexibelt.</span><span data-en>Earn money in your free time. Flexible.</span></li>
+            <li><span data-sv>Gör nytta lokalt.</span><span data-en>Make a difference locally.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- MARKET                                       -->
+  <!-- ============================================ -->
+  <section class="section section--snow" id="market">
+    <div class="container">
+      <p class="section-label reveal">
+        <span data-sv>MARKNADEN</span><span data-en>THE MARKET</span>
+      </p>
+
+      <div class="market__stats">
+        <div class="stat reveal">
+          <div class="stat__number">600 000</div>
+          <div class="stat__label">
+            <span data-sv>Fritidshus i Sverige</span><span data-en>Summer houses in Sweden</span>
+          </div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__number">250 SEK</div>
+          <div class="stat__label">
+            <span data-sv>Snittpris per kontroll</span><span data-en>Average price per check</span>
+          </div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__number">20%</div>
+          <div class="stat__label">
+            <span data-sv>Plattformsavgift</span><span data-en>Platform fee</span>
+          </div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__number">99 SEK<span class="stat__suffix">/mån</span></div>
+          <div class="stat__label">
+            <span data-sv>Premium prenumeration</span><span data-en>Premium subscription</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="market__text reveal">
+        <p class="text-body">
+          <span data-sv>Sverige har ingen direkt konkurrent i detta segment. Befintliga alternativ — Verisure, Facebook-grupper, att köra dit själv — löser inte problemet.</span>
+          <span data-en>Sweden has no direct competitor in this segment. Existing alternatives — Verisure, Facebook groups, driving there yourself — don't solve the problem.</span>
+        </p>
+        <p class="text-body" style="margin-top: 1.5rem;">
+          <span data-sv>Fjärra är den första on-demand plattformen för fritidshustillsyn med BankID-verifiering, Swish-betalning och skalbar peer-to-peer-logik.</span>
+          <span data-en>Fjärra is the first on-demand platform for summer house inspections with BankID verification, Swish payment, and scalable peer-to-peer logic.</span>
+        </p>
+        <p class="text-body" style="margin-top: 1.5rem;">
+          <span data-sv>Sekundärt: varje genomförd kontroll minskar försäkringsbolagets skadeutbetalning. Det skapar ett direkt B2B-incitament för Länsförsäkringar, Folksam och If att integrera Fjärra i sina kundförmåner.</span>
+          <span data-en>Secondary: every completed check reduces insurer payout exposure. This creates a direct B2B incentive for Länsförsäkringar, Folksam, and If to integrate Fjärra into their customer benefits.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- THE ASK                                      -->
+  <!-- ============================================ -->
+  <section class="section section--pine" id="ask">
+    <div class="container">
+      <p class="section-label reveal" style="color: var(--fjarra-amber);">
+        <span data-sv>INVESTERINGSMÖJLIGHET</span><span data-en>THE ASK</span>
+      </p>
+      <p class="ask__intro text-h3 reveal">
+        <span data-sv>Vi söker tidiga partners — inte bara kapital.</span>
+        <span data-en>We're looking for early partners — not just capital.</span>
+      </p>
+
+      <div class="ask__cards">
+        <div class="card card--funding reveal">
+          <div class="card__tier text-caption" style="color: var(--fjarra-amber); margin-bottom: 1rem;">Pre-seed</div>
+          <div class="card__amount">200 000 – 500 000 SEK</div>
+          <div class="card__source">Almi / Vinnova / Angel</div>
+          <p class="text-body" style="margin-top: 1rem; color: rgba(245,239,224,0.7);">
+            <span data-sv>Validering. Pilot i Österlen. Första 100 kontroller.</span>
+            <span data-en>Validation. Pilot in Österlen. First 100 checks.</span>
+          </p>
+        </div>
+        <div class="card card--funding card--funding--highlight reveal">
+          <div class="card__tier text-caption" style="color: var(--fjarra-amber); margin-bottom: 1rem;">Seed Angel</div>
+          <div class="card__amount">500 000 – 1,5M SEK</div>
+          <div class="card__source">Angel / Advisor equity</div>
+          <p class="text-body" style="margin-top: 1rem; color: rgba(245,239,224,0.7);">
+            <span data-sv>MVP-bygg. BankID-integration. Lansering i en region.</span>
+            <span data-en>MVP build. BankID integration. Launch in one region.</span>
+          </p>
+        </div>
+        <div class="card card--funding reveal">
+          <div class="card__tier text-caption" style="color: var(--fjarra-amber); margin-bottom: 1rem;">
+            <span data-sv>Strategisk</span><span data-en>Strategic</span>
+          </div>
+          <div class="card__amount">
+            <span data-sv>Försäkringspiloter</span><span data-en>Insurance pilots</span>
+          </div>
+          <div class="card__source">Länsförsäkringar Skåne · Folksam · If</div>
+          <p class="text-body" style="margin-top: 1rem; color: rgba(245,239,224,0.7);">
+            <span data-sv>Bulk-prissättning. White-label möjlighet.</span>
+            <span data-en>Bulk pricing. White-label opportunity.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FOUNDER                                      -->
+  <!-- ============================================ -->
+  <section class="section section--snow" id="founder">
+    <div class="container">
+      <p class="section-label reveal">
+        <span data-sv>GRUNDAREN</span><span data-en>THE FOUNDER</span>
+      </p>
+
+      <div class="founder__grid">
+        <div class="founder__photo-wrap reveal">
+          <img src="./assets/founder-photo.png" alt="Sam Baker — Founder of Fjärra" width="400" height="400" loading="lazy">
+        </div>
+        <div class="founder__info">
+          <h2 class="founder__name text-h2 reveal">Sam Baker</h2>
+          <p class="founder__title text-body reveal">
+            Communications Specialist · Inter IKEA Group, Malmö<br>
+            MSc Media Technology · Malmö University
+          </p>
+
+          <div class="founder__story reveal">
+            <p class="quote-line">
+              <span data-sv>"Jag hittade problemet under ett morgonjogg."</span>
+              <span data-en>"I found the problem during a morning jog."</span>
+            </p>
+            <p class="text-body">
+              <span data-sv>En vintermorgon, under en joggingtur längs stugvägarna nära sitt hem i Malmö, lade Sam märke till något som alla lokala hade slutat se — rad efter rad av öde fritidshus, förslutna och tysta, med snö som hopade sig på taken och skador som tyst ackumulerades bakom låsta dörrar.</span>
+              <span data-en>One winter morning, running along the cottage paths near his home in Malmö, Sam noticed something that every local had long stopped seeing — row after row of deserted summer houses, shuttered and silent, with snow piling on rooftops and damage quietly accumulating behind locked doors.</span>
+            </p>
+            <p class="text-body" style="margin-top: 1rem;">
+              <span data-sv>Han började fråga runt. Det han fann överraskade honom: varje sommar kör ägare den långa vägen tillbaka för att hitta spruckna rör, kollapsade stuprännor och vattenskador som hade byggts upp i månader. Många anlitar lokala fixare till höga akutpriser. Försäkringsbolagen absorberar resten — och betalar ut samma säsongsbetonade skadeanspråk, år efter år, på skador som ett enda besök kunde ha fångat i tid.</span>
+              <span data-en>He started asking around. What he found surprised him: every summer, owners make the long drive back to find burst pipes, collapsed gutters, and water damage that had been building for months. Many hire local fixers at steep emergency rates. Insurance companies absorb the rest — paying out the same seasonal claims, year after year, on damage that a single visit could have caught in time.</span>
+            </p>
+            <p class="text-body" style="margin-top: 1rem;">
+              <span data-sv>Sam växte upp i Lagos, Nigeria, och kom till Malmö som internationell student. Sverige blev hans andra hem — och med det kom en genuin nyfikenhet om svensk kultur, inklusive den djupa anknytningen svenskar har till sina stugor. Det utomståendeperspektivet — att tydligt se det som lokala hade normaliserat — är det som gjorde Fjärra möjligt.</span>
+              <span data-en>Sam grew up in Lagos, Nigeria, and came to Malmö as an international student. Sweden became his second home — and with it came a genuine curiosity about Swedish culture, including the deep attachment Swedes have to their stugor. That outsider perspective — seeing clearly what locals had normalised — is what made Fjärra possible.</span>
+            </p>
+          </div>
+
+          <p class="founder__bio text-body reveal">
+            <span data-sv>Med 7+ års erfarenhet av digital kanalstrategi inom globala organisationer som Inter IKEA Group, Safeture och Lockheed Martin, bidrar Sam med både kommersiellt djup och praktisk teknisk erfarenhet till Fjärra. Han byggde och lanserade RymakeAI — ett live AI-verktyg för automatiserad kreativ produktion — vilket visar att han bygger produkter, inte bara koncept. Som publicerad forskare inom plattformsstyrning och digital diskurs, närmar sig Sam Fjärra med samma analytiska noggrannhet han tillämpar i akademiskt arbete.</span>
+            <span data-en>With 7+ years of experience in digital channel strategy across global organisations including Inter IKEA Group, Safeture, and Lockheed Martin, Sam brings both commercial depth and hands-on technical experience to Fjärra. He built and deployed RymakeAI — a live AI tool for automated creative production — demonstrating that he builds products, not just concepts. A published researcher in platform governance and digital discourse, Sam approaches Fjärra with the same analytical rigour he applies to academic work.</span>
+          </p>
+
+          <div class="founder__pills reveal">
+            <span class="pill">Inter IKEA Group</span>
+            <span class="pill">MSc · Malmö University</span>
+            <span class="pill">RymakeAI — Live Product</span>
+            <span class="pill"><span data-sv>Publicerad forskare</span><span data-en>Published Researcher</span></span>
+            <span class="pill">Lagos → Malmö</span>
+          </div>
+
+          <a href="https://www.linkedin.com/in/sam-baker-o07" target="_blank" rel="noopener noreferrer" class="founder__linkedin reveal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <span data-sv>Kontakta Sam →</span><span data-en>Connect with Sam →</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- CONTACT                                      -->
+  <!-- ============================================ -->
+  <section class="section section--amber" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <h2 class="contact__headline text-h2">
+            <span data-sv>Redo att prata?</span><span data-en>Ready to talk?</span>
+          </h2>
+          <p class="contact__subtext text-body">
+            <span data-sv>Vi söker tidiga investerare, rådgivare och pilotpartners.</span>
+            <span data-en>We're looking for early investors, advisors, and pilot partners.</span>
+          </p>
+          <div class="contact__lines">
+            <div class="contact__line">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+46734806058">+46 734 806 058</a>
+            </div>
+            <div class="contact__line">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:hello@fjarra.se">hello@fjarra.se</a>
+            </div>
+            <div class="contact__line">
+              <a href="https://www.linkedin.com/in/sam-baker-o07" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="color: inherit; display: inline-flex;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <span>LinkedIn</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <form class="form" id="contact-form">
+            <div class="form__group">
+              <label for="contact-name" class="form__label">
+                <span data-sv>Namn</span><span data-en>Name</span>
+              </label>
+              <input type="text" id="contact-name" name="name" class="form__input" required autocomplete="name">
+            </div>
+            <div class="form__group">
+              <label for="contact-email" class="form__label">
+                <span data-sv>E-post</span><span data-en>Email</span>
+              </label>
+              <input type="email" id="contact-email" name="email" class="form__input" required autocomplete="email">
+            </div>
+            <div class="form__group">
+              <label for="contact-org" class="form__label">
+                Organisation <span style="font-weight: 400; color: var(--fjarra-mist);">(<span data-sv>valfritt</span><span data-en>optional</span>)</span>
+              </label>
+              <input type="text" id="contact-org" name="organisation" class="form__input" autocomplete="organization">
+            </div>
+            <div class="form__group">
+              <label for="contact-role" class="form__label">
+                <span data-sv>Jag är...</span><span data-en>I am a...</span>
+              </label>
+              <select id="contact-role" name="role" class="form__select" required>
+                <option value="" disabled selected><span data-sv>Välj</span><span data-en>Select</span></option>
+                <option value="investor"><span data-sv>Investerare</span><span data-en>Investor</span></option>
+                <option value="innovation-hub">Innovationshub</option>
+                <option value="insurance"><span data-sv>Försäkringsbolag</span><span data-en>Insurance company</span></option>
+                <option value="other"><span data-sv>Annat</span><span data-en>Other</span></option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="contact-message" class="form__label">
+                <span data-sv>Meddelande</span><span data-en>Message</span>
+              </label>
+              <textarea id="contact-message" name="message" class="form__textarea" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--dark form__submit" id="contact-submit">
+              <span data-sv>Skicka meddelande →</span><span data-en>Send message →</span>
+            </button>
+            <p class="form__gdpr">
+              <span data-sv>Genom att skicka detta formulär godkänner du att vi lagrar dina uppgifter för att besvara din förfrågan. Vi säljer aldrig data till tredje part. <a href="/integritetspolicy">Läs vår integritetspolicy.</a></span>
+              <span data-en>By submitting this form you agree that we store your details to respond to your enquiry. We never sell data to third parties. <a href="/integritetspolicy">Read our privacy policy.</a></span>
+            </p>
+          </form>
+          <div class="form__success" id="form-success">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <h3 class="text-h3" style="margin-bottom: 0.5rem;">
+              <span data-sv>Tack för ditt meddelande!</span><span data-en>Thank you for your message!</span>
+            </h3>
+            <p class="text-body">
+              <span data-sv>Vi återkommer inom kort.</span><span data-en>We'll get back to you shortly.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FOOTER                                       -->
+  <!-- ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__brand">
+        <img src="./assets/logo/fjarra-logo-reverse.png" alt="Fjärra" width="100" height="33" loading="lazy">
+        <span class="footer__copy">© 2026 Fjärra. Malmö, Sverige.</span>
+      </div>
+      <ul class="footer__links" role="list">
+        <li><a href="/integritetspolicy" class="footer__link"><span data-sv>Integritetspolicy</span><span data-en>Privacy Policy</span></a></li>
+        <li><button type="button" class="footer__link" id="footer-cookie-settings"><span data-sv>Cookieinställningar</span><span data-en>Cookie Settings</span></button></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ============================================ -->
+  <!-- COOKIE BANNER                                -->
+  <!-- ============================================ -->
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent">
+    <div class="container">
+      <p class="cookie-banner__text">
+        <span data-sv>Fjärra använder cookies för att förstå hur besökare interagerar med sidan.</span>
+        <span data-en>Fjärra uses cookies to understand how visitors interact with the site.</span>
+      </p>
+      <div class="cookie-banner__buttons">
+        <button type="button" class="btn btn--primary" id="cookie-accept-all">
+          <span data-sv>Acceptera alla</span><span data-en>Accept all</span>
+        </button>
+        <button type="button" class="btn btn--outline" id="cookie-necessary-only">
+          <span data-sv>Endast nödvändiga</span><span data-en>Necessary only</span>
+        </button>
+        <button type="button" class="btn btn--outline" id="cookie-manage">
+          <span data-sv>Hantera inställningar</span><span data-en>Manage settings</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Settings Modal -->
+  <div class="cookie-modal" id="cookie-modal" role="dialog" aria-label="Cookie settings" aria-hidden="true">
+    <div class="cookie-modal__content">
+      <h3 class="cookie-modal__title text-h3">
+        <span data-sv>Cookieinställningar</span><span data-en>Cookie Settings</span>
+      </h3>
+
+      <div class="cookie-category">
+        <div class="cookie-category__info">
+          <div class="cookie-category__name">
+            <span data-sv>Nödvändiga</span><span data-en>Necessary</span>
+          </div>
+          <div class="cookie-category__desc">
+            <span data-sv>Krävs för att sidan ska fungera. Kan inte stängas av.</span>
+            <span data-en>Required for the site to function. Cannot be turned off.</span>
+          </div>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" checked disabled>
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-category">
+        <div class="cookie-category__info">
+          <div class="cookie-category__name">
+            <span data-sv>Analytiska</span><span data-en>Analytics</span>
+          </div>
+          <div class="cookie-category__desc">
+            <span data-sv>Hjälper oss förstå hur besökare använder sidan via Firebase Analytics.</span>
+            <span data-en>Helps us understand how visitors use the site via Firebase Analytics.</span>
+          </div>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="cookie-analytics-toggle">
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-modal__actions">
+        <button type="button" class="btn btn--primary" id="cookie-save-settings">
+          <span data-sv>Spara inställningar</span><span data-en>Save settings</span>
+        </button>
+        <button type="button" class="btn btn--outline-dark" id="cookie-modal-close">
+          <span data-sv>Avbryt</span><span data-en>Cancel</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- SCRIPTS                                      -->
+  <!-- ============================================ -->
+  <script>
+    /* ============================================ */
+    /* Language Toggle                              */
+    /* ============================================ */
+    (function() {
+      const savedLang = localStorage.getItem('fjarra_lang');
+      if (savedLang && (savedLang === 'en' || savedLang === 'sv')) {
+        document.documentElement.setAttribute('data-lang', savedLang);
+      }
+
+      function updateLangButtons() {
+        const current = document.documentElement.getAttribute('data-lang');
+        document.querySelectorAll('.nav__lang').forEach(btn => {
+          btn.textContent = current === 'sv' ? 'EN' : 'SV';
+        });
+      }
+
+      updateLangButtons();
+
+      document.querySelectorAll('.nav__lang').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const current = document.documentElement.getAttribute('data-lang');
+          const next = current === 'sv' ? 'en' : 'sv';
+          document.documentElement.setAttribute('data-lang', next);
+          document.documentElement.setAttribute('lang', next);
+          localStorage.setItem('fjarra_lang', next);
+          updateLangButtons();
+        });
+      });
+    })();
+
+    /* ============================================ */
+    /* Nav Scroll Behaviour                         */
+    /* ============================================ */
+    (function() {
+      const nav = document.getElementById('main-nav');
+      const hero = document.getElementById('hero');
+      const logoReverse = nav.querySelector('.nav__logo-reverse');
+      const logoDefault = nav.querySelector('.nav__logo-default');
+
+      // Initially: reverse logo visible, default hidden
+      logoDefault.style.display = 'none';
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            nav.classList.remove('nav--solid');
+            logoReverse.style.display = '';
+            logoDefault.style.display = 'none';
+          } else {
+            nav.classList.add('nav--solid');
+            logoReverse.style.display = 'none';
+            logoDefault.style.display = '';
+          }
+        },
+        { threshold: 0, rootMargin: '-80px 0px 0px 0px' }
+      );
+      observer.observe(hero);
+    })();
+
+    /* ============================================ */
+    /* Mobile Menu                                  */
+    /* ============================================ */
+    (function() {
+      const hamburger = document.querySelector('.nav__hamburger');
+      const menu = document.getElementById('mobile-menu');
+      const closeBtn = document.querySelector('.nav__mobile-close');
+      const links = menu.querySelectorAll('.nav__link, .btn');
+
+      function openMenu() {
+        menu.classList.add('nav__mobile-menu--open');
+        menu.setAttribute('aria-hidden', 'false');
+        hamburger.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeMenu() {
+        menu.classList.remove('nav__mobile-menu--open');
+        menu.setAttribute('aria-hidden', 'true');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+
+      hamburger.addEventListener('click', openMenu);
+      closeBtn.addEventListener('click', closeMenu);
+      links.forEach(link => link.addEventListener('click', closeMenu));
+    })();
+
+    /* ============================================ */
+    /* Scroll Reveal Animations                     */
+    /* ============================================ */
+    (function() {
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (prefersReduced) {
+        document.querySelectorAll('.reveal').forEach(el => el.classList.add('reveal--visible'));
+        return;
+      }
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+              // Stagger siblings
+              const parent = entry.target.parentElement;
+              const siblings = Array.from(parent.querySelectorAll(':scope > .reveal'));
+              const siblingIndex = siblings.indexOf(entry.target);
+              const delay = siblingIndex >= 0 ? siblingIndex * 80 : 0;
+
+              setTimeout(() => {
+                entry.target.classList.add('reveal--visible');
+              }, delay);
+
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+      );
+
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    })();
+
+    /* ============================================ */
+    /* Cookie Consent                               */
+    /* ============================================ */
+    (function() {
+      const banner = document.getElementById('cookie-banner');
+      const modal = document.getElementById('cookie-modal');
+      const acceptAllBtn = document.getElementById('cookie-accept-all');
+      const necessaryOnlyBtn = document.getElementById('cookie-necessary-only');
+      const manageBtn = document.getElementById('cookie-manage');
+      const saveSettingsBtn = document.getElementById('cookie-save-settings');
+      const modalCloseBtn = document.getElementById('cookie-modal-close');
+      const analyticsToggle = document.getElementById('cookie-analytics-toggle');
+      const footerCookieBtn = document.getElementById('footer-cookie-settings');
+
+      const STORAGE_KEY = 'fjarra_cookie_consent';
+
+      function getConsent() {
+        try {
+          const stored = localStorage.getItem(STORAGE_KEY);
+          return stored ? JSON.parse(stored) : null;
+        } catch { return null; }
+      }
+
+      function setConsent(analytics) {
+        const consent = {
+          necessary: true,
+          analytics: analytics,
+          timestamp: new Date().toISOString()
+        };
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(consent));
+        hideBanner();
+        hideModal();
+        if (analytics) initAnalytics();
+      }
+
+      function showBanner() {
+        banner.classList.add('cookie-banner--visible');
+      }
+
+      function hideBanner() {
+        banner.classList.remove('cookie-banner--visible');
+      }
+
+      function showModal() {
+        modal.classList.add('cookie-modal--visible');
+        modal.setAttribute('aria-hidden', 'false');
+      }
+
+      function hideModal() {
+        modal.classList.remove('cookie-modal--visible');
+        modal.setAttribute('aria-hidden', 'true');
+      }
+
+      function initAnalytics() {
+        // Load Firebase Analytics only after consent
+        if (window.__fjarraAnalyticsLoaded) return;
+        window.__fjarraAnalyticsLoaded = true;
+
+        const config = {
+          apiKey: "AIzaSyCo02ixkiSEKwwrvH-ofeYFzch521SE5Rg",
+          authDomain: "fjarra-4033f.firebaseapp.com",
+          projectId: "fjarra-4033f",
+          storageBucket: "fjarra-4033f.firebasestorage.app",
+          messagingSenderId: "870818589801",
+          appId: "1:870818589801:web:320e5804b1b53c945386f8",
+          measurementId: "G-WDSNCW1F6S"
+        };
+
+        // Dynamically load Firebase scripts
+        const appScript = document.createElement('script');
+        appScript.type = 'module';
+        appScript.textContent = `
+          import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js';
+          import { getAnalytics } from 'https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js';
+          const app = initializeApp(${JSON.stringify(config)});
+          getAnalytics(app);
+        `;
+        document.head.appendChild(appScript);
+      }
+
+      // Check existing consent
+      const existing = getConsent();
+      if (existing) {
+        if (existing.analytics) initAnalytics();
+        // Don't show banner
+      } else {
+        // Show banner after short delay
+        setTimeout(showBanner, 1000);
+      }
+
+      // Event listeners
+      acceptAllBtn.addEventListener('click', () => setConsent(true));
+      necessaryOnlyBtn.addEventListener('click', () => setConsent(false));
+      manageBtn.addEventListener('click', () => {
+        hideBanner();
+        const existing = getConsent();
+        if (existing) analyticsToggle.checked = existing.analytics;
+        showModal();
+      });
+      saveSettingsBtn.addEventListener('click', () => setConsent(analyticsToggle.checked));
+      modalCloseBtn.addEventListener('click', hideModal);
+
+      // Footer cookie settings
+      footerCookieBtn.addEventListener('click', () => {
+        const existing = getConsent();
+        if (existing) analyticsToggle.checked = existing.analytics;
+        showModal();
+      });
+
+      // Close modal on backdrop click
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) hideModal();
+      });
+    })();
+
+    /* ============================================ */
+    /* Contact Form → Firestore                     */
+    /* ============================================ */
+    (function() {
+      const form = document.getElementById('contact-form');
+      const successEl = document.getElementById('form-success');
+      const submitBtn = document.getElementById('contact-submit');
+
+      if (!form) return;
+
+      // Load Firebase Firestore on demand
+      let firestoreReady = null;
+
+      function loadFirestore() {
+        if (firestoreReady) return firestoreReady;
+
+        firestoreReady = new Promise((resolve, reject) => {
+          const script = document.createElement('script');
+          script.type = 'module';
+          script.textContent = `
+            import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js';
+            import { getFirestore, collection, addDoc, serverTimestamp } from 'https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js';
+
+            const config = {
+              apiKey: "AIzaSyCo02ixkiSEKwwrvH-ofeYFzch521SE5Rg",
+              authDomain: "fjarra-4033f.firebaseapp.com",
+              projectId: "fjarra-4033f",
+              storageBucket: "fjarra-4033f.firebasestorage.app",
+              messagingSenderId: "870818589801",
+              appId: "1:870818589801:web:320e5804b1b53c945386f8"
+            };
+
+            const app = initializeApp(config, 'firestore-app');
+            const db = getFirestore(app);
+            window.__fjarraFirestore = { db, collection, addDoc, serverTimestamp };
+            window.dispatchEvent(new Event('fjarra-firestore-ready'));
+          `;
+          document.head.appendChild(script);
+
+          const timeout = setTimeout(() => reject(new Error('Firestore load timeout')), 10000);
+          window.addEventListener('fjarra-firestore-ready', () => {
+            clearTimeout(timeout);
+            resolve(window.__fjarraFirestore);
+          }, { once: true });
+        });
+
+        return firestoreReady;
+      }
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        submitBtn.disabled = true;
+        submitBtn.textContent = '...';
+
+        try {
+          const { db, collection, addDoc, serverTimestamp } = await loadFirestore();
+
+          await addDoc(collection(db, 'fjarra_contact_submissions'), {
+            name: form.name.value.trim(),
+            email: form.email.value.trim(),
+            organisation: form.organisation.value.trim() || '',
+            message: form.message.value.trim(),
+            role: form.role.value,
+            timestamp: serverTimestamp(),
+            source_url: window.location.href
+          });
+
+          form.classList.add('form--hidden');
+          successEl.classList.add('active');
+        } catch (error) {
+          console.error('Form submission error:', error);
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = '<span data-sv>Fel — försök igen</span><span data-en>Error — try again</span>';
+          // Re-apply language
+          const lang = document.documentElement.getAttribute('data-lang');
+          document.documentElement.setAttribute('data-lang', lang);
+        }
+      });
+    })();
+
+    /* ============================================ */
+    /* Smooth scroll for anchor links               */
+    /* ============================================ */
+    (function() {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', (e) => {
+          const target = document.querySelector(anchor.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            const navHeight = document.getElementById('main-nav').offsetHeight;
+            const top = target.getBoundingClientRect().top + window.scrollY - navHeight;
+            window.scrollTo({ top, behavior: 'smooth' });
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
