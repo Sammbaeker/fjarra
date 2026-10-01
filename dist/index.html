@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fjärra — Din stuga. Alltid bevakad.</title>
-  <meta name="description" content="Fjärra är Sveriges första on-demand plattform för fritidshustillsyn. Verifierade lokala väktare. Tidsstämplade foton. Fred och ro — inom timmar.">
+  <title>Fjärra: Din stuga. Alltid bevakad.</title>
+  <meta name="description" content="Fjärra är en on-demand-plattform för tillsyn av fritidshus. Verifierade lokala väktare. Tidsstämplade foton. Fred och ro inom timmar.">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Fjärra — Din stuga. Alltid bevakad.">
+  <meta property="og:title" content="Fjärra: Din stuga. Alltid bevakad.">
   <meta property="og:description" content="On-demand visual checks for Swedish summer houses. Verified locals. Peace of mind within hours.">
   <meta property="og:image" content="https://fjarra.se/assets/og-image.png">
   <meta property="og:url" content="https://fjarra.se">
@@ -34,7 +34,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=DM+Sans:wght@400;500&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=DM+Sans:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=DM+Sans:wght@400;500&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=DM+Sans:wght@400;500&display=swap"></noscript>
 
   <!-- Styles -->
   <link rel="stylesheet" href="./styles.css">
@@ -44,22 +45,22 @@
   <!-- ============================================ -->
   <!-- NAV                                          -->
   <!-- ============================================ -->
-  <nav class="nav" id="main-nav" aria-label="Main navigation">
+  <nav class="nav" id="main-nav" aria-label="Huvudmeny" data-aria-sv="Huvudmeny" data-aria-en="Main navigation">
     <div class="container">
-      <a href="/" class="nav__logo" aria-label="Fjärra — Home">
-        <img src="./assets/logo/fjarra-logo-reverse.png" alt="Fjärra" class="nav__logo-reverse" width="140" height="46">
-        <img src="./assets/logo/fjarra-logo-default.png" alt="Fjärra" class="nav__logo-default" width="140" height="46">
+      <a href="/" class="nav__logo" aria-label="Fjärra: startsida" data-aria-sv="Fjärra: startsida" data-aria-en="Fjärra: home">
+        <img translate="no" src="./assets/logo/fjarra-logo-reverse-80.png" alt="Fjärra" class="nav__logo-reverse" width="72" height="40">
+        <img translate="no" src="./assets/logo/fjarra-logo-default-80.png" alt="Fjärra" class="nav__logo-default" width="72" height="40">
       </a>
       <ul class="nav__links" role="list">
         <li><a href="#problem" class="nav__link"><span data-sv>Problemet</span><span data-en>Problem</span></a></li>
         <li><a href="#solution" class="nav__link"><span data-sv>Lösningen</span><span data-en>Solution</span></a></li>
         <li><a href="#ask" class="nav__link"><span data-sv>Investering</span><span data-en>The Ask</span></a></li>
-        <li><a href="#founder" class="nav__link"><span data-sv>Grundaren</span><span data-en>Founder</span></a></li>
+        <li><a href="#founders" class="nav__link"><span data-sv>Grundarna</span><span data-en>Founders</span></a></li>
       </ul>
       <div class="nav__right">
-        <button class="nav__lang" type="button" aria-label="Switch language">EN</button>
+        <button class="nav__lang" type="button" aria-label="Switch to English">EN</button>
         <a href="#contact" class="btn btn--primary nav__cta"><span data-sv>Kontakta oss</span><span data-en>Contact us</span></a>
-        <button class="nav__hamburger" type="button" aria-label="Open menu" aria-expanded="false">
+        <button class="nav__hamburger" type="button" aria-label="Öppna meny" data-aria-sv="Öppna meny" data-aria-en="Open menu" aria-expanded="false">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
       </div>
@@ -67,16 +68,16 @@
   </nav>
 
   <!-- Mobile Menu -->
-  <div class="nav__mobile-menu" id="mobile-menu" aria-hidden="true">
-    <button class="nav__mobile-close" type="button" aria-label="Close menu">
+  <div class="nav__mobile-menu" id="mobile-menu" aria-hidden="true" inert>
+    <button class="nav__mobile-close" type="button" aria-label="Stäng meny" data-aria-sv="Stäng meny" data-aria-en="Close menu">
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>
     <a href="#problem" class="nav__link"><span data-sv>Problemet</span><span data-en>Problem</span></a>
     <a href="#solution" class="nav__link"><span data-sv>Lösningen</span><span data-en>Solution</span></a>
     <a href="#ask" class="nav__link"><span data-sv>Investering</span><span data-en>The Ask</span></a>
-    <a href="#founder" class="nav__link"><span data-sv>Grundaren</span><span data-en>Founder</span></a>
+    <a href="#founders" class="nav__link"><span data-sv>Grundarna</span><span data-en>Founders</span></a>
     <a href="#contact" class="btn btn--primary" style="margin-top: 1rem;"><span data-sv>Kontakta oss</span><span data-en>Contact us</span></a>
-    <button class="nav__lang" type="button" aria-label="Switch language" style="margin-top: 1rem;">EN</button>
+    <button class="nav__lang" type="button" aria-label="Switch to English" style="margin-top: 1rem;">EN</button>
   </div>
 
   <!-- ============================================ -->
@@ -109,14 +110,14 @@
           <span data-sv>Lansering 2026 · Malmö, Sverige</span>
           <span data-en>Launching 2026 · Malmö, Sweden</span>
         </p>
-        <h1 class="hero__headline text-hero">Fjärra.</h1>
+        <h1 class="hero__headline text-hero"><span translate="no" class="notranslate">Fjärra</span>.</h1>
         <p class="hero__subheadline text-h3">
           <span data-sv>Din stuga. Alltid bevakad.</span>
           <span data-en>Your cottage. Always watched over.</span>
         </p>
         <p class="hero__body text-body">
-          <span data-sv>On-demand visuella kontroller för svenska fritidshus. Verifierade lokala väktare. Tidsstämplade foton. Fred och ro — inom timmar.</span>
-          <span data-en>On-demand visual checks for Swedish summer houses. Verified locals. Timestamped photos. Peace of mind — within hours.</span>
+          <span data-sv>On-demand visuella kontroller för svenska fritidshus. Verifierade lokala väktare. Tidsstämplade foton. Fred och ro inom timmar.</span>
+          <span data-en>On-demand visual checks for Swedish summer houses. Verified locals. Timestamped photos. Peace of mind within hours.</span>
         </p>
         <div class="hero__ctas">
           <a href="#solution" class="btn btn--primary">
@@ -132,19 +133,19 @@
         <div class="hero__trust">
           <div class="trust-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            <span>BankID Verified</span>
+            <span><span data-sv>Byggd för BankID</span><span data-en>Built for BankID</span></span>
           </div>
           <div class="trust-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-            <span>Swish Payments</span>
+            <span><span data-sv>Betalning med Swish</span><span data-en>Swish payments</span></span>
           </div>
           <div class="trust-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
-            <span>GDPR Compliant</span>
+            <span><span data-sv>GDPR från start</span><span data-en>GDPR by design</span></span>
           </div>
           <div class="trust-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>Malmö-based</span>
+            <span><span data-sv>Grundat i Malmö</span><span data-en>Founded in Malmö</span></span>
           </div>
         </div>
       </div>
@@ -156,9 +157,9 @@
   <!-- ============================================ -->
   <section class="section section--birch" id="problem">
     <div class="container">
-      <p class="section-label reveal">
+      <h2 class="section-label reveal">
         <span data-sv>PROBLEMET</span><span data-en>THE PROBLEM</span>
-      </p>
+      </h2>
       <div class="problem__grid">
         <div class="problem__stat reveal">
           <div class="problem__stat-value">600 000</div>
@@ -182,8 +183,8 @@
               <span data-sv>Klimat</span><span data-en>Climate</span>
             </h3>
             <p class="text-body">
-              <span data-sv>Hårda vintrar. Frusen rördragning. Snölast. Skador som kostar hundratusentals kronor — och som ingen såg i tid.</span>
-              <span data-en>Harsh winters. Frozen pipes. Snow load. Damage costing hundreds of thousands of kronor — that nobody saw in time.</span>
+              <span data-sv>Hårda vintrar. Frusen rördragning. Snölast. Skador som kostar hundratusentals kronor, och som ingen såg i tid.</span>
+              <span data-en>Harsh winters. Frozen pipes. Snow load. Damage costing hundreds of thousands of kronor, which nobody saw in time.</span>
             </p>
           </div>
           <div class="card reveal">
@@ -209,8 +210,8 @@
         <span data-sv>LÖSNINGEN</span><span data-en>THE SOLUTION</span>
       </p>
       <h2 class="text-h2 reveal" style="margin-bottom: 3rem; max-width: 680px;">
-        <span data-sv>Fjärra kopplar ihop dig med en lokal Väktare — någon som faktiskt är där.</span>
-        <span data-en>Fjärra connects you with a local Watcher — someone who is actually there.</span>
+        <span data-sv><span translate="no" class="notranslate">Fjärra</span> kopplar ihop dig med en lokal Väktare: någon som faktiskt är där.</span>
+        <span data-en><span translate="no" class="notranslate">Fjärra</span> connects you with a local Watcher: someone who is actually there.</span>
       </h2>
 
       <div class="solution__steps">
@@ -220,8 +221,8 @@
             <span data-sv>Du bokar</span><span data-en>You book</span>
           </h3>
           <p class="step__desc text-body">
-            <span data-sv>Lägg ut ett uppdrag i appen. Välj typ av kontroll och sätt ett pris.</span>
-            <span data-en>Post a task in the app. Choose the type of check and set a price.</span>
+            <span data-sv>Lägg ut ett uppdrag i appen. Välj typ av kontroll och se priset direkt.</span>
+            <span data-en>Post a task in the app. Choose the type of check and see the price upfront.</span>
           </p>
         </div>
         <div class="step reveal">
@@ -247,11 +248,11 @@
         <div class="step reveal">
           <div class="step__number">4</div>
           <h3 class="step__title text-h3">
-            <span data-sv>Du ser. Du betalar.</span><span data-en>You see. You pay.</span>
+            <span data-sv>Du godkänner.</span><span data-en>You approve.</span>
           </h3>
           <p class="step__desc text-body">
-            <span data-sv>Rapport direkt i din app. Godkänn och betala via Swish — direkt.</span>
-            <span data-en>Report straight to your app. Approve and pay via Swish — instantly.</span>
+            <span data-sv>Du betalar med Swish när du bokar. Pengarna släpps till Väktaren först när du har godkänt rapporten.</span>
+            <span data-en>You pay with Swish when you book. The money is released to the Watcher only after you approve the report.</span>
           </p>
         </div>
       </div>
@@ -264,7 +265,7 @@
           <ul>
             <li><span data-sv>Fred och ro utan att köra.</span><span data-en>Peace of mind without driving.</span></li>
             <li><span data-sv>Direkt rapport.</span><span data-en>Instant report.</span></li>
-            <li><span data-sv>Billigare försäkring.</span><span data-en>Cheaper insurance.</span></li>
+            <li><span data-sv>Dokumentation för försäkringen.</span><span data-en>Documentation for your insurance.</span></li>
           </ul>
         </div>
         <div class="values__column reveal">
@@ -297,37 +298,37 @@
           </div>
         </div>
         <div class="stat reveal">
-          <div class="stat__number">250 SEK</div>
+          <div class="stat__number"><span data-sv>från 349 kr</span><span data-en>from SEK 349</span></div>
           <div class="stat__label">
-            <span data-sv>Snittpris per kontroll</span><span data-en>Average price per check</span>
+            <span data-sv>Indikativt pris per kontroll</span><span data-en>Indicative price per check</span>
           </div>
         </div>
         <div class="stat reveal">
-          <div class="stat__number">20%</div>
+          <div class="stat__number">~20%</div>
           <div class="stat__label">
             <span data-sv>Plattformsavgift</span><span data-en>Platform fee</span>
           </div>
         </div>
         <div class="stat reveal">
-          <div class="stat__number">99 SEK<span class="stat__suffix">/mån</span></div>
+          <div class="stat__number">4</div>
           <div class="stat__label">
-            <span data-sv>Premium prenumeration</span><span data-en>Premium subscription</span>
+            <span data-sv>Nordiska marknader: Sverige, Norge, Danmark, Finland</span><span data-en>Nordic markets: Sweden, Norway, Denmark, Finland</span>
           </div>
         </div>
       </div>
 
       <div class="market__text reveal">
         <p class="text-body">
-          <span data-sv>Sverige har ingen direkt konkurrent i detta segment. Befintliga alternativ — Verisure, Facebook-grupper, att köra dit själv — löser inte problemet.</span>
-          <span data-en>Sweden has no direct competitor in this segment. Existing alternatives — Verisure, Facebook groups, driving there yourself — don't solve the problem.</span>
+          <span data-sv>Tillsyn av fritidshus finns i dag som lokala firmor, larm och sensorer. Ingen erbjuder en on-demand-marknadsplats med BankID-verifierade lokala väktare och tidsstämplade, GPS-verifierade rapporter.</span>
+          <span data-en>Summer house inspection exists today as local firms, alarms and sensors. No one offers an on-demand marketplace with BankID-verified local Watchers and time-stamped, GPS-verified reports.</span>
         </p>
         <p class="text-body" style="margin-top: 1.5rem;">
-          <span data-sv>Fjärra är den första on-demand plattformen för fritidshustillsyn med BankID-verifiering, Swish-betalning och skalbar peer-to-peer-logik.</span>
-          <span data-en>Fjärra is the first on-demand platform for summer house inspections with BankID verification, Swish payment, and scalable peer-to-peer logic.</span>
+          <span data-sv><span translate="no" class="notranslate">Fjärra</span> bygger på infrastruktur som svenskar redan litar på: BankID för identitet och Swish för betalning. Samma modell fungerar i Norge, Danmark och Finland, med BankID, MitID och Vipps eller MobilePay.</span>
+          <span data-en><span translate="no" class="notranslate">Fjärra</span> is built on infrastructure Swedes already trust: BankID for identity and Swish for payment. The same model works in Norway, Denmark and Finland, with BankID, MitID and Vipps or MobilePay.</span>
         </p>
         <p class="text-body" style="margin-top: 1.5rem;">
-          <span data-sv>Sekundärt: varje genomförd kontroll minskar försäkringsbolagets skadeutbetalning. Det skapar ett direkt B2B-incitament för Länsförsäkringar, Folksam och If att integrera Fjärra i sina kundförmåner.</span>
-          <span data-en>Secondary: every completed check reduces insurer payout exposure. This creates a direct B2B incentive for Länsförsäkringar, Folksam, and If to integrate Fjärra into their customer benefits.</span>
+          <span data-sv>Varje genomförd kontroll skapar dokumentation som kan minska skador och underlätta försäkringsärenden. Det ger försäkringsbolag ett tydligt skäl att samarbeta med <span translate="no" class="notranslate">Fjärra</span>.</span>
+          <span data-en>Every completed check creates documentation that can reduce damage and simplify insurance claims. That gives insurers a clear reason to partner with <span translate="no" class="notranslate">Fjärra</span>.</span>
         </p>
       </div>
     </div>
@@ -342,40 +343,42 @@
         <span data-sv>INVESTERINGSMÖJLIGHET</span><span data-en>THE ASK</span>
       </p>
       <p class="ask__intro text-h3 reveal">
-        <span data-sv>Vi söker tidiga partners — inte bara kapital.</span>
-        <span data-en>We're looking for early partners — not just capital.</span>
+        <span data-sv>Vi söker tidiga partners, inte bara kapital.</span>
+        <span data-en>We're looking for early partners, not just capital.</span>
       </p>
 
       <div class="ask__cards">
         <div class="card card--funding reveal">
-          <div class="card__tier text-caption" style="color: var(--fjarra-amber); margin-bottom: 1rem;">Pre-seed</div>
-          <div class="card__amount">200 000 – 500 000 SEK</div>
-          <div class="card__source">Almi / Vinnova / Angel</div>
+          <div class="card__tier text-caption" style="color: var(--fjarra-amber); margin-bottom: 1rem;">
+            <span data-sv>Bidrag</span><span data-en>Grant</span>
+          </div>
+          <div class="card__amount"><span data-sv>upp till 500 000 kr</span><span data-en>up to SEK 500 000</span></div>
+          <div class="card__source">Vinnova Innovativa Startups · Almi</div>
           <p class="text-body" style="margin-top: 1rem; color: rgba(245,239,224,0.7);">
-            <span data-sv>Validering. Pilot i Österlen. Första 100 kontroller.</span>
-            <span data-en>Validation. Pilot in Österlen. First 100 checks.</span>
+            <span data-sv>Validera kundbehov och betalningsvilja. Pilot i Skåne.</span>
+            <span data-en>Validate customer need and willingness to pay. Pilot in Skåne.</span>
           </p>
         </div>
         <div class="card card--funding card--funding--highlight reveal">
-          <div class="card__tier text-caption" style="color: var(--fjarra-amber); margin-bottom: 1rem;">Seed Angel</div>
-          <div class="card__amount">500 000 – 1,5M SEK</div>
-          <div class="card__source">Angel / Advisor equity</div>
+          <div class="card__tier text-caption" style="color: var(--fjarra-amber); margin-bottom: 1rem;">Pre-seed</div>
+          <div class="card__amount"><span data-sv>500 000 – 1 500 000 kr</span><span data-en>SEK 500 000 – 1 500 000</span></div>
+          <div class="card__source"><span data-sv>Änglainvesterare</span><span data-en>Angel investors</span></div>
           <p class="text-body" style="margin-top: 1rem; color: rgba(245,239,224,0.7);">
-            <span data-sv>MVP-bygg. BankID-integration. Lansering i en region.</span>
-            <span data-en>MVP build. BankID integration. Launch in one region.</span>
+            <span data-sv>Bygga MVP-appen med BankID och betalningar. Lansering i Skåne.</span>
+            <span data-en>Build the MVP app with BankID and payments. Launch in Skåne.</span>
           </p>
         </div>
         <div class="card card--funding reveal">
           <div class="card__tier text-caption" style="color: var(--fjarra-amber); margin-bottom: 1rem;">
-            <span data-sv>Strategisk</span><span data-en>Strategic</span>
+            <span data-sv>Strategiskt</span><span data-en>Strategic</span>
           </div>
           <div class="card__amount">
-            <span data-sv>Försäkringspiloter</span><span data-en>Insurance pilots</span>
+            <span data-sv>Försäkringspartners</span><span data-en>Insurance partners</span>
           </div>
-          <div class="card__source">Länsförsäkringar Skåne · Folksam · If</div>
+          <div class="card__source"><span data-sv>Målpartners: Länsförsäkringar, Folksam, If</span><span data-en>Target partners: Länsförsäkringar, Folksam, If</span></div>
           <p class="text-body" style="margin-top: 1rem; color: rgba(245,239,224,0.7);">
-            <span data-sv>Bulk-prissättning. White-label möjlighet.</span>
-            <span data-en>Bulk pricing. White-label opportunity.</span>
+            <span data-sv>Pilot med försäkringskunder. White label-möjlighet.</span>
+            <span data-en>Pilot with policyholders. White-label opportunity.</span>
           </p>
         </div>
       </div>
@@ -383,61 +386,122 @@
   </section>
 
   <!-- ============================================ -->
-  <!-- FOUNDER                                      -->
+  <!-- FOUNDERS                                     -->
   <!-- ============================================ -->
-  <section class="section section--snow" id="founder">
+  <section class="section section--snow" id="founders">
+    <span id="founder" class="anchor-alias" aria-hidden="true"></span>
     <div class="container">
-      <p class="section-label reveal">
-        <span data-sv>GRUNDAREN</span><span data-en>THE FOUNDER</span>
-      </p>
+      <h2 class="section-label reveal">
+        <span data-sv>GRUNDARNA</span><span data-en>THE FOUNDERS</span>
+      </h2>
 
-      <div class="founder__grid">
-        <div class="founder__photo-wrap reveal">
-          <img src="./assets/founder-photo.png" alt="Sam Baker — Founder of Fjärra" width="400" height="400" loading="lazy">
-        </div>
-        <div class="founder__info">
-          <h2 class="founder__name text-h2 reveal">Sam Baker</h2>
-          <p class="founder__title text-body reveal">
-            Communications Specialist · Inter IKEA Group, Malmö<br>
-            MSc Media Technology · Malmö University
-          </p>
-
-          <div class="founder__story reveal">
-            <p class="quote-line">
-              <span data-sv>"Jag hittade problemet under ett morgonjogg."</span>
-              <span data-en>"I found the problem during a morning jog."</span>
-            </p>
-            <p class="text-body">
-              <span data-sv>En vintermorgon, under en joggingtur längs stugvägarna nära sitt hem i Malmö, lade Sam märke till något som alla lokala hade slutat se — rad efter rad av öde fritidshus, förslutna och tysta, med snö som hopade sig på taken och skador som tyst ackumulerades bakom låsta dörrar.</span>
-              <span data-en>One winter morning, running along the cottage paths near his home in Malmö, Sam noticed something that every local had long stopped seeing — row after row of deserted summer houses, shuttered and silent, with snow piling on rooftops and damage quietly accumulating behind locked doors.</span>
-            </p>
-            <p class="text-body" style="margin-top: 1rem;">
-              <span data-sv>Han började fråga runt. Det han fann överraskade honom: varje sommar kör ägare den långa vägen tillbaka för att hitta spruckna rör, kollapsade stuprännor och vattenskador som hade byggts upp i månader. Många anlitar lokala fixare till höga akutpriser. Försäkringsbolagen absorberar resten — och betalar ut samma säsongsbetonade skadeanspråk, år efter år, på skador som ett enda besök kunde ha fångat i tid.</span>
-              <span data-en>He started asking around. What he found surprised him: every summer, owners make the long drive back to find burst pipes, collapsed gutters, and water damage that had been building for months. Many hire local fixers at steep emergency rates. Insurance companies absorb the rest — paying out the same seasonal claims, year after year, on damage that a single visit could have caught in time.</span>
-            </p>
-            <p class="text-body" style="margin-top: 1rem;">
-              <span data-sv>Sam växte upp i Lagos, Nigeria, och kom till Malmö som internationell student. Sverige blev hans andra hem — och med det kom en genuin nyfikenhet om svensk kultur, inklusive den djupa anknytningen svenskar har till sina stugor. Det utomståendeperspektivet — att tydligt se det som lokala hade normaliserat — är det som gjorde Fjärra möjligt.</span>
-              <span data-en>Sam grew up in Lagos, Nigeria, and came to Malmö as an international student. Sweden became his second home — and with it came a genuine curiosity about Swedish culture, including the deep attachment Swedes have to their stugor. That outsider perspective — seeing clearly what locals had normalised — is what made Fjärra possible.</span>
-            </p>
+      <div class="founders__grid">
+        <article class="founder-card reveal">
+          <div class="founder__photo-wrap">
+            <picture>
+              <source srcset="./assets/team/sam.webp" type="image/webp">
+              <img src="./assets/team/sam.png" alt="Sam Baker, medgrundare av Fjärra" data-alt-sv="Sam Baker, medgrundare av Fjärra" data-alt-en="Sam Baker, co-founder of Fjärra" width="800" height="800" loading="lazy" decoding="async">
+            </picture>
           </div>
-
-          <p class="founder__bio text-body reveal">
-            <span data-sv>Med 7+ års erfarenhet av digital kanalstrategi inom globala organisationer som Inter IKEA Group, Safeture och Lockheed Martin, bidrar Sam med både kommersiellt djup och praktisk teknisk erfarenhet till Fjärra. Han byggde och lanserade RymakeAI — ett live AI-verktyg för automatiserad kreativ produktion — vilket visar att han bygger produkter, inte bara koncept. Som publicerad forskare inom plattformsstyrning och digital diskurs, närmar sig Sam Fjärra med samma analytiska noggrannhet han tillämpar i akademiskt arbete.</span>
-            <span data-en>With 7+ years of experience in digital channel strategy across global organisations including Inter IKEA Group, Safeture, and Lockheed Martin, Sam brings both commercial depth and hands-on technical experience to Fjärra. He built and deployed RymakeAI — a live AI tool for automated creative production — demonstrating that he builds products, not just concepts. A published researcher in platform governance and digital discourse, Sam approaches Fjärra with the same analytical rigour he applies to academic work.</span>
+          <h3 class="founder__name text-h2">Sam Baker</h3>
+          <p class="founder__role text-caption"><span data-sv>Medgrundare</span><span data-en>Co-founder</span></p>
+          <p class="founder__title text-body">MSc Media Technology · Malmö University</p>
+          <p class="founder__bio text-body">
+            <span data-sv>Sam har mer än sju års erfarenhet av digital kanalstrategi i globala organisationer, bland annat Inter IKEA Group, Safeture och Lockheed Martin. Han har byggt och lanserat RymakeAI, ett AI-verktyg för automatiserad kreativ produktion, och är publicerad forskare inom plattformsstyrning och digital diskurs.</span>
+            <span data-en>Sam brings more than seven years of digital channel strategy across global organisations, including Inter IKEA Group, Safeture and Lockheed Martin. He built and launched RymakeAI, a live AI tool for automated creative production, and is a published researcher in platform governance and digital discourse.</span>
           </p>
-
-          <div class="founder__pills reveal">
+          <div class="founder__pills">
             <span class="pill">Inter IKEA Group</span>
             <span class="pill">MSc · Malmö University</span>
-            <span class="pill">RymakeAI — Live Product</span>
-            <span class="pill"><span data-sv>Publicerad forskare</span><span data-en>Published Researcher</span></span>
+            <span class="pill">RymakeAI</span>
+            <span class="pill"><span data-sv>Publicerad forskare</span><span data-en>Published researcher</span></span>
             <span class="pill">Lagos → Malmö</span>
           </div>
-
-          <a href="https://www.linkedin.com/in/sam-baker-o07" target="_blank" rel="noopener noreferrer" class="founder__linkedin reveal">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            <span data-sv>Kontakta Sam →</span><span data-en>Connect with Sam →</span>
+          <a href="https://www.linkedin.com/in/sam-baker-o07" target="_blank" rel="noopener noreferrer" class="founder__linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <span data-sv>Sam på LinkedIn</span><span data-en>Sam on LinkedIn</span>
           </a>
+        </article>
+
+        <article class="founder-card reveal">
+          <div class="founder__photo-wrap">
+            <picture>
+              <source srcset="./assets/team/jamiu.webp" type="image/webp">
+              <img src="./assets/team/jamiu.png" alt="Jamiu Olalekan Olaide, medgrundare av Fjärra" data-alt-sv="Jamiu Olalekan Olaide, medgrundare av Fjärra" data-alt-en="Jamiu Olalekan Olaide, co-founder of Fjärra" width="800" height="800" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <h3 class="founder__name text-h2">Jamiu Olalekan Olaide</h3>
+          <p class="founder__role text-caption"><span data-sv>Medgrundare</span><span data-en>Co-founder</span></p>
+          <p class="founder__title text-body">MSc Computer Science · <span data-sv>Blekinge Tekniska Högskola</span><span data-en>Blekinge Institute of Technology</span></p>
+          <p class="founder__bio text-body">
+            <span data-sv>Jamiu är cybersäkerhetsspecialist på Orange Cyberdefense i Malmö, där han har gått från säkerhetsanalytiker till Senior Security Onboarding Engineer och Technical Implementation Lead. Han inför säkerhetsövervakning med Microsoft Sentinel, Defender och XDR hos företagskunder och arbetar i Azure, AWS och Google Cloud. För <span translate="no" class="notranslate">Fjärra</span> är hans kompetens grunden för det användarna måste kunna lita på: BankID-verifierade identiteter, GDPR-säker hantering av personuppgifter och tidsstämplade, GPS-verifierade kontrollbilder.</span>
+            <span data-en>Jamiu is a cybersecurity specialist at Orange Cyberdefense in Malmö, where he has grown from security operations analyst to Senior Security Onboarding Engineer and Technical Implementation Lead. He deploys security monitoring with Microsoft Sentinel, Defender and XDR for enterprise customers, and works across Azure, AWS and Google Cloud. For <span translate="no" class="notranslate">Fjärra</span>, his expertise underpins what users must be able to trust: BankID-verified identities, GDPR-compliant handling of personal data, and time-stamped, GPS-verified inspection evidence.</span>
+          </p>
+          <div class="founder__pills">
+            <span class="pill">Orange Cyberdefense · Malmö</span>
+            <span class="pill">MSc · BTH</span>
+            <span class="pill">CompTIA Security+</span>
+            <span class="pill">Blue Team Level 1</span>
+            <span class="pill">Azure · AWS · GCP</span>
+          </div>
+          <a href="https://www.linkedin.com/in/jamiu-olalekan-olaide-b31834192/" target="_blank" rel="noopener noreferrer" class="founder__linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <span data-sv>Jamiu på LinkedIn</span><span data-en>Jamiu on LinkedIn</span>
+          </a>
+        </article>
+      </div>
+
+      <div class="founder__story founders__story reveal">
+        <h3 class="founder__story-heading text-h3">
+          <span data-sv>Hur <span translate="no" class="notranslate">Fjärra</span> började</span><span data-en>How <span translate="no" class="notranslate">Fjärra</span> began</span>
+        </h3>
+        <p class="quote-line">
+          <span data-sv>"Jag hittade problemet under en morgonjogg."</span>
+          <span data-en>"I found the problem during a morning jog."</span>
+        </p>
+        <p class="text-body">
+          <span data-sv>En vintermorgon, under en joggingtur längs stugvägarna nära sitt hem i Malmö, lade Sam märke till något som alla lokala hade slutat se: rad efter rad av öde fritidshus, förslutna och tysta, med snö som hopade sig på taken och skador som tyst ackumulerades bakom låsta dörrar.</span>
+          <span data-en>One winter morning, running along the cottage paths near his home in Malmö, Sam noticed something that every local had long stopped seeing: row after row of deserted summer houses, shuttered and silent, with snow piling on rooftops and damage quietly accumulating behind locked doors.</span>
+        </p>
+        <p class="text-body" style="margin-top: 1rem;">
+          <span data-sv>Han började fråga runt. Det han fann överraskade honom: varje sommar kör ägare den långa vägen tillbaka för att hitta spruckna rör, kollapsade stuprännor och vattenskador som hade byggts upp i månader. Många anlitar lokala fixare till höga akutpriser. Försäkringsbolagen absorberar resten och betalar ut samma säsongsbetonade skadeanspråk, år efter år, på skador som ett enda besök kunde ha fångat i tid.</span>
+          <span data-en>He started asking around. What he found surprised him: every summer, owners make the long drive back to find burst pipes, collapsed gutters, and water damage that had been building for months. Many hire local fixers at steep emergency rates. Insurance companies absorb the rest, paying out the same seasonal claims, year after year, on damage that a single visit could have caught in time.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SHAPED IN SWEDEN                             -->
+  <!-- ============================================ -->
+  <section class="section section--dark" id="shaped-in-sweden" aria-labelledby="sweden-heading">
+    <div class="container">
+      <p class="section-label reveal" style="color: var(--fjarra-amber);">
+        <span data-sv>FORMADE I SVERIGE</span><span data-en>SHAPED IN SWEDEN</span>
+      </p>
+      <h2 class="text-h2 reveal sweden__heading" id="sweden-heading">
+        <span data-sv>Två grundare som kom till Sverige för att studera, och valde att stanna.</span>
+        <span data-en>Two founders who came to Sweden to study, and chose to stay.</span>
+      </h2>
+      <p class="text-body reveal sweden__intro">
+        <span data-sv><span translate="no" class="notranslate">Fjärra</span> grundades i Malmö. Båda grundarna har svenska masterexamina, båda arbetar i Malmö, och båda har upplevt samma sak: ett land där nya idéer får utrymme att växa.</span>
+        <span data-en><span translate="no" class="notranslate">Fjärra</span> was founded in Malmö. Both founders hold Swedish master's degrees, both work in Malmö, and both have experienced the same thing: a country where new ideas are given room to grow.</span>
+      </p>
+
+      <div class="sweden__cols">
+        <div class="sweden__col reveal">
+          <h3 class="sweden__name text-h3">Sam</h3>
+          <p class="text-body">
+            <span data-sv>Sam växte upp i Lagos och kom till Malmö som internationell student. Vid Malmö universitet var han studentombud vid Fakulteten för teknik och samhälle, där han arbetade med lärare och administratörer och satt i fakultetsstyrelsen och fakultetens utbildningsnämnd. Där såg han på nära håll hur innovation står i centrum, med innovationsmiljöer som STORMS och Drivhuset som hjälper studenter att göra idéer till företag. Som student deltog han i Drivhusets program Level Up, som förändrade hur han tänker kring innovation, entreprenörskap och startups. Hans övertygelse sedan dess: ge dig själv friheten att tänka annorlunda, för det är där innovation börjar. En idé som gör människors liv lite bättre, hur lite det än är, kan växa om den tas om hand på rätt sätt.</span>
+            <span data-en>Sam grew up in Lagos and came to Malmö as an international student. At Malmö University he served as a student representative (studentombud) at the Faculty of Technology and Society, working with teachers and administrators and sitting on the faculty board and the faculty's education board. From there he saw up close how central innovation is, with hubs such as STORMS and Drivhuset helping students turn ideas into companies. As a student he took part in Drivhuset's Level Up programme, which changed how he thinks about innovation, entrepreneurship and startups. His conviction since: give yourself the freedom to think differently, because that is where innovation begins. Any idea that makes people's lives better, however slightly, can grow if it is nurtured properly.</span>
+          </p>
+        </div>
+        <div class="sweden__col reveal">
+          <h3 class="sweden__name text-h3">Jamiu</h3>
+          <p class="text-body">
+            <span data-sv>Jamiu har bott i flera delar av världen. Ett Erasmusprogram tog honom till Sverige och Blekinge Tekniska Högskola, där han upptäckte en kultur byggd kring att utveckla innovation, och ett lugnt och stillsamt sätt att leva. Efter sin masterexamen valde han att göra Sverige till sitt hem, och i dag bor och arbetar han i Malmö. Han ser en tydlig väg till ett liv format av svensk innovation och teknik.</span>
+            <span data-en>Jamiu has lived in several parts of the world. An Erasmus programme brought him to Sweden and Blekinge Institute of Technology, where he discovered a culture built around developing innovation, and a calm, quiet way of life. After completing his master's he chose to make Sweden his home, and today he lives and works in Malmö. He sees a clear path to a life shaped by Swedish innovation and technology.</span>
+          </p>
         </div>
       </div>
     </div>
@@ -467,10 +531,12 @@
               <a href="mailto:hello@fjarra.se">hello@fjarra.se</a>
             </div>
             <div class="contact__line">
-              <a href="https://www.linkedin.com/in/sam-baker-o07" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="color: inherit; display: inline-flex;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              </a>
-              <span>LinkedIn</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <a href="https://www.linkedin.com/in/sam-baker-o07" target="_blank" rel="noopener noreferrer"><span data-sv>Sam på LinkedIn</span><span data-en>Sam on LinkedIn</span></a>
+            </div>
+            <div class="contact__line">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <a href="https://www.linkedin.com/in/jamiu-olalekan-olaide-b31834192/" target="_blank" rel="noopener noreferrer"><span data-sv>Jamiu på LinkedIn</span><span data-en>Jamiu on LinkedIn</span></a>
             </div>
           </div>
         </div>
@@ -500,11 +566,11 @@
                 <span data-sv>Jag är...</span><span data-en>I am a...</span>
               </label>
               <select id="contact-role" name="role" class="form__select" required>
-                <option value="" disabled selected><span data-sv>Välj</span><span data-en>Select</span></option>
-                <option value="investor"><span data-sv>Investerare</span><span data-en>Investor</span></option>
-                <option value="innovation-hub">Innovationshub</option>
-                <option value="insurance"><span data-sv>Försäkringsbolag</span><span data-en>Insurance company</span></option>
-                <option value="other"><span data-sv>Annat</span><span data-en>Other</span></option>
+                <option value="" disabled selected data-text-sv="Välj" data-text-en="Select">Välj</option>
+                <option value="investor" data-text-sv="Investerare" data-text-en="Investor">Investerare</option>
+                <option value="innovation-hub" data-text-sv="Innovationshub" data-text-en="Innovation hub">Innovationshub</option>
+                <option value="insurance" data-text-sv="Försäkringsbolag" data-text-en="Insurance company">Försäkringsbolag</option>
+                <option value="other" data-text-sv="Annat" data-text-en="Other">Annat</option>
               </select>
             </div>
             <div class="form__group">
@@ -541,8 +607,9 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__brand">
-        <img src="./assets/logo/fjarra-logo-reverse.png" alt="Fjärra" width="100" height="33" loading="lazy">
-        <span class="footer__copy">© 2026 Fjärra. Malmö, Sverige.</span>
+        <img translate="no" src="./assets/logo/fjarra-logo-reverse-80.png" alt="Fjärra" width="50" height="28" loading="lazy">
+        <!-- TODO: replace "(under bildning)" with org.nr once registered. -->
+        <span class="footer__copy"><span data-sv>© 2026 <span translate="no" class="notranslate">Fjärra</span> AB (under bildning). Malmö, Sverige.</span><span data-en>© 2026 <span translate="no" class="notranslate">Fjärra</span> AB (in formation). Malmö, Sweden.</span></span>
       </div>
       <ul class="footer__links" role="list">
         <li><a href="/integritetspolicy" class="footer__link"><span data-sv>Integritetspolicy</span><span data-en>Privacy Policy</span></a></li>
@@ -554,11 +621,11 @@
   <!-- ============================================ -->
   <!-- COOKIE BANNER                                -->
   <!-- ============================================ -->
-  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent">
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Samtycke till cookies" data-aria-sv="Samtycke till cookies" data-aria-en="Cookie consent">
     <div class="container">
       <p class="cookie-banner__text">
-        <span data-sv>Fjärra använder cookies för att förstå hur besökare interagerar med sidan.</span>
-        <span data-en>Fjärra uses cookies to understand how visitors interact with the site.</span>
+        <span data-sv><span translate="no" class="notranslate">Fjärra</span> använder cookies för att förstå hur besökare interagerar med sidan.</span>
+        <span data-en><span translate="no" class="notranslate">Fjärra</span> uses cookies to understand how visitors interact with the site.</span>
       </p>
       <div class="cookie-banner__buttons">
         <button type="button" class="btn btn--primary" id="cookie-accept-all">
@@ -575,7 +642,7 @@
   </div>
 
   <!-- Cookie Settings Modal -->
-  <div class="cookie-modal" id="cookie-modal" role="dialog" aria-label="Cookie settings" aria-hidden="true">
+  <div class="cookie-modal" id="cookie-modal" role="dialog" aria-label="Cookieinställningar" data-aria-sv="Cookieinställningar" data-aria-en="Cookie settings" aria-hidden="true" inert>
     <div class="cookie-modal__content">
       <h3 class="cookie-modal__title text-h3">
         <span data-sv>Cookieinställningar</span><span data-en>Cookie Settings</span>
@@ -632,28 +699,35 @@
     /* Language Toggle                              */
     /* ============================================ */
     (function() {
-      const savedLang = localStorage.getItem('fjarra_lang');
-      if (savedLang && (savedLang === 'en' || savedLang === 'sv')) {
-        document.documentElement.setAttribute('data-lang', savedLang);
-      }
+      const root = document.documentElement;
+      const titles = {
+        sv: 'Fjärra: Din stuga. Alltid bevakad.',
+        en: 'Fjärra: Your cottage. Always watched over.'
+      };
 
-      function updateLangButtons() {
-        const current = document.documentElement.getAttribute('data-lang');
+      // Text that cannot use <span data-sv>/<span data-en>: attributes, <option>, <title>.
+      function applyLang(lang) {
+        root.setAttribute('data-lang', lang);
+        root.setAttribute('lang', lang);
+        document.title = titles[lang];
+        document.querySelectorAll('[data-alt-' + lang + ']').forEach(el => el.setAttribute('alt', el.getAttribute('data-alt-' + lang)));
+        document.querySelectorAll('[data-aria-' + lang + ']').forEach(el => el.setAttribute('aria-label', el.getAttribute('data-aria-' + lang)));
+        document.querySelectorAll('[data-text-' + lang + ']').forEach(el => { el.textContent = el.getAttribute('data-text-' + lang); });
         document.querySelectorAll('.nav__lang').forEach(btn => {
-          btn.textContent = current === 'sv' ? 'EN' : 'SV';
+          btn.textContent = lang === 'sv' ? 'EN' : 'SV';
+          btn.setAttribute('aria-label', lang === 'sv' ? 'Switch to English' : 'Byt till svenska');
         });
       }
 
-      updateLangButtons();
+      let saved = null;
+      try { saved = localStorage.getItem('fjarra_lang'); } catch (e) {}
+      applyLang(saved === 'en' || saved === 'sv' ? saved : root.getAttribute('data-lang') || 'sv');
 
       document.querySelectorAll('.nav__lang').forEach(btn => {
         btn.addEventListener('click', () => {
-          const current = document.documentElement.getAttribute('data-lang');
-          const next = current === 'sv' ? 'en' : 'sv';
-          document.documentElement.setAttribute('data-lang', next);
-          document.documentElement.setAttribute('lang', next);
-          localStorage.setItem('fjarra_lang', next);
-          updateLangButtons();
+          const next = root.getAttribute('data-lang') === 'sv' ? 'en' : 'sv';
+          applyLang(next);
+          try { localStorage.setItem('fjarra_lang', next); } catch (e) {}
         });
       });
     })();
@@ -698,6 +772,7 @@
 
       function openMenu() {
         menu.classList.add('nav__mobile-menu--open');
+        menu.removeAttribute('inert');
         menu.setAttribute('aria-hidden', 'false');
         hamburger.setAttribute('aria-expanded', 'true');
         document.body.style.overflow = 'hidden';
@@ -705,6 +780,7 @@
 
       function closeMenu() {
         menu.classList.remove('nav__mobile-menu--open');
+        menu.setAttribute('inert', '');
         menu.setAttribute('aria-hidden', 'true');
         hamburger.setAttribute('aria-expanded', 'false');
         document.body.style.overflow = '';
@@ -794,11 +870,13 @@
 
       function showModal() {
         modal.classList.add('cookie-modal--visible');
+        modal.removeAttribute('inert');
         modal.setAttribute('aria-hidden', 'false');
       }
 
       function hideModal() {
         modal.classList.remove('cookie-modal--visible');
+        modal.setAttribute('inert', '');
         modal.setAttribute('aria-hidden', 'true');
       }
 
@@ -936,7 +1014,7 @@
         } catch (error) {
           console.error('Form submission error:', error);
           submitBtn.disabled = false;
-          submitBtn.innerHTML = '<span data-sv>Fel — försök igen</span><span data-en>Error — try again</span>';
+          submitBtn.innerHTML = '<span data-sv>Fel, försök igen</span><span data-en>Error, try again</span>';
           // Re-apply language
           const lang = document.documentElement.getAttribute('data-lang');
           document.documentElement.setAttribute('data-lang', lang);

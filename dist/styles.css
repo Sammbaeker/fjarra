@@ -98,6 +98,9 @@ p {
 
 .section-label {
   margin-bottom: 2rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .stat__suffix {
@@ -605,12 +608,99 @@ p {
   gap: 2rem;
 }
 
-/* 13. Founder */
-.founder__grid {
+/* 13. Founders */
+#founders {
+  position: relative;
+}
+
+/* Keeps old #founder links working: sits at the very top of #founders */
+.anchor-alias {
+  position: absolute;
+  top: 0;
+}
+
+.founders__grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 4rem;
-  align-items: start;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.founder-card {
+  background: var(--fjarra-birch);
+  border-radius: 8px;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.founder-card .founder__photo-wrap {
+  width: 160px;
+  margin: 0 0 1.5rem;
+}
+
+.founder-card .founder__name {
+  font-size: clamp(26px, 3vw, 34px);
+}
+
+.founder__role {
+  color: var(--fjarra-forest);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.founder-card .founder__title {
+  margin-bottom: 1.25rem;
+}
+
+.founder-card .founder__bio {
+  margin-bottom: 1.5rem;
+}
+
+.founder-card .founder__linkedin {
+  margin-top: auto;
+}
+
+.founders__story {
+  margin: 3rem 0 0;
+}
+
+.founder__story-heading {
+  color: var(--fjarra-forest);
+  margin-bottom: 1rem;
+}
+
+/* 13b. Shaped in Sweden (dark section) */
+.sweden__heading {
+  max-width: 760px;
+  margin-bottom: 1.5rem;
+}
+
+.sweden__intro {
+  max-width: 720px;
+  color: rgba(245, 239, 224, 0.85);
+  margin-bottom: 3rem;
+}
+
+.sweden__cols {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+.sweden__col {
+  border-left: 2px solid var(--fjarra-amber);
+  padding-left: 1.5rem;
+}
+
+.sweden__name {
+  color: var(--fjarra-amber-soft);
+  margin-bottom: 0.75rem;
+}
+
+.sweden__col p {
+  color: rgba(245, 239, 224, 0.85);
+  line-height: 1.8;
 }
 
 .founder__photo-wrap {
@@ -1002,6 +1092,7 @@ input:checked + .toggle-slider::before {
 
 .footer__brand img {
   height: 28px;
+  width: auto;
 }
 
 .footer__copy {
@@ -1093,11 +1184,12 @@ input:checked + .toggle-slider::before {
   .ask__cards {
     grid-template-columns: repeat(3, 1fr);
   }
-  .founder__grid {
-    grid-template-columns: 280px 1fr;
+  .founders__grid {
+    grid-template-columns: 1fr 1fr;
   }
-  .founder__photo-wrap {
-    margin: 0;
+  .sweden__cols {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
   }
   .contact__grid {
     grid-template-columns: 1fr 1fr;
