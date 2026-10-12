@@ -184,7 +184,7 @@
       </div>
       <div class="contact-item text-body">
         <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-        <span><span translate="no" class="notranslate">Fjärra</span>, Malmö, <span data-sv>Sverige</span><span data-en>Sweden</span></span>
+        <span><span translate="no" class="notranslate">Fjärra</span> AB, <span data-sv>org.nr</span><span data-en>reg. no.</span> 559606-7156, Malmö, <span data-sv>Sverige</span><span data-en>Sweden</span></span>
       </div>
     </div>
 
@@ -194,27 +194,96 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__brand">
-        <h2 class="text-h2"><span translate="no" class="notranslate">Fjärra</span></h2>
-        <p class="text-body footer__copy">
-          &copy; 2026 <span translate="no" class="notranslate">Fjärra</span>.<br>
-          <span data-sv>Alla rättigheter förbehållna.</span>
-          <span data-en>All rights reserved.</span>
-        </p>
+        <img translate="no" src="./assets/logo/fjarra-logo-reverse-80.png" alt="Fjärra" width="50" height="28" loading="lazy">
+        <span class="footer__copy"><span data-sv>© 2026 <span translate="no" class="notranslate">Fjärra</span> AB · Org.nr 559606-7156 · Säte: Malmö</span><span data-en>© 2026 <span translate="no" class="notranslate">Fjärra</span> AB · Reg. no. 559606-7156 · Registered office: Malmö, Sweden</span></span>
       </div>
-      <div class="footer__links">
-        <a href="/integritetspolicy" class="footer__link text-body">
-          <span data-sv>Integritetspolicy</span>
-          <span data-en>Privacy Policy</span>
-        </a>
-        <button id="open-cookie-settings" class="footer__link text-body" style="background: none; border: none; padding: 0; cursor: pointer; text-align: left;">
-          <span data-sv>Hantera kakor</span>
-          <span data-en>Cookie Settings</span>
-        </button>
-      </div>
+      <ul class="footer__links" role="list">
+        <li><a href="/integritetspolicy" class="footer__link"><span data-sv>Integritetspolicy</span><span data-en>Privacy Policy</span></a></li>
+        <li><button type="button" class="footer__link" id="footer-cookie-settings"><span data-sv>Cookieinställningar</span><span data-en>Cookie Settings</span></button></li>
+      </ul>
     </div>
   </footer>
 
+  <!-- ============================================ -->
+  <!-- COOKIE BANNER                                -->
+  <!-- ============================================ -->
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Samtycke till cookies" data-aria-sv="Samtycke till cookies" data-aria-en="Cookie consent">
+    <div class="container">
+      <p class="cookie-banner__text">
+        <span data-sv><span translate="no" class="notranslate">Fjärra</span> använder cookies för att förstå hur besökare interagerar med sidan.</span>
+        <span data-en><span translate="no" class="notranslate">Fjärra</span> uses cookies to understand how visitors interact with the site.</span>
+      </p>
+      <div class="cookie-banner__buttons">
+        <button type="button" class="btn btn--primary" id="cookie-accept-all">
+          <span data-sv>Acceptera alla</span><span data-en>Accept all</span>
+        </button>
+        <button type="button" class="btn btn--outline" id="cookie-necessary-only">
+          <span data-sv>Endast nödvändiga</span><span data-en>Necessary only</span>
+        </button>
+        <button type="button" class="btn btn--outline" id="cookie-manage">
+          <span data-sv>Hantera inställningar</span><span data-en>Manage settings</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Settings Modal -->
+  <div class="cookie-modal" id="cookie-modal" role="dialog" aria-label="Cookieinställningar" data-aria-sv="Cookieinställningar" data-aria-en="Cookie settings" aria-hidden="true" inert>
+    <div class="cookie-modal__content">
+      <h3 class="cookie-modal__title text-h3">
+        <span data-sv>Cookieinställningar</span><span data-en>Cookie Settings</span>
+      </h3>
+
+      <div class="cookie-category">
+        <div class="cookie-category__info">
+          <div class="cookie-category__name">
+            <span data-sv>Nödvändiga</span><span data-en>Necessary</span>
+          </div>
+          <div class="cookie-category__desc">
+            <span data-sv>Krävs för att sidan ska fungera. Kan inte stängas av.</span>
+            <span data-en>Required for the site to function. Cannot be turned off.</span>
+          </div>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" checked disabled>
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-category">
+        <div class="cookie-category__info">
+          <div class="cookie-category__name">
+            <span data-sv>Analytiska</span><span data-en>Analytics</span>
+          </div>
+          <div class="cookie-category__desc">
+            <span data-sv>Hjälper oss förstå hur besökare använder sidan via Firebase Analytics.</span>
+            <span data-en>Helps us understand how visitors use the site via Firebase Analytics.</span>
+          </div>
+        </div>
+        <label class="toggle-switch">
+          <input type="checkbox" id="cookie-analytics-toggle">
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <div class="cookie-modal__actions">
+        <button type="button" class="btn btn--primary" id="cookie-save-settings">
+          <span data-sv>Spara inställningar</span><span data-en>Save settings</span>
+        </button>
+        <button type="button" class="btn btn--outline-dark" id="cookie-modal-close">
+          <span data-sv>Avbryt</span><span data-en>Cancel</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./cookie-consent.js" defer></script>
   <script>
+    // Swap bilingual aria-labels (cookie banner and modal)
+    function applyAria(lang) {
+      document.querySelectorAll('[data-aria-' + lang + ']').forEach(el => el.setAttribute('aria-label', el.getAttribute('data-aria-' + lang)));
+    }
+
     // Language toggle
     document.querySelector('.nav__lang').addEventListener('click', () => {
       const html = document.documentElement;
@@ -223,6 +292,7 @@
       html.setAttribute('data-lang', next);
       html.setAttribute('lang', next);
       document.querySelector('.nav__lang').textContent = next === 'sv' ? 'EN' : 'SV';
+      applyAria(next);
       localStorage.setItem('fjarra_lang', next);
     });
 
@@ -232,6 +302,7 @@
       document.documentElement.setAttribute('data-lang', savedLang);
       document.documentElement.setAttribute('lang', savedLang);
       document.querySelector('.nav__lang').textContent = savedLang === 'sv' ? 'EN' : 'SV';
+      applyAria(savedLang);
     }
 
     // Scroll reveal
